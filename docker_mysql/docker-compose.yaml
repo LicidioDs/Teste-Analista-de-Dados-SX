@@ -1,0 +1,28 @@
+services:
+  servidor_mysql:
+    hostname: servidor_mysql
+    container_name: servidor_mysql
+    image: mysql:5.7.40
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --local-infile=1
+    volumes:
+      - /c/Users/licid/OneDrive/Documentos/Case/docker_mysql/deploy/mysql/init:/docker-entrypoint-initdb.d
+      - /c/Users/licid/OneDrive/Documentos/Case/docker_mysql/deploy:/data
+
+    ports:
+      - "3307:3306"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.95"
+          memory: 4G
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=0139
+      - TZ=America/Sao_Paulo
+      - wait_timeout=28800    
+      - interactive_timeout=28800
+      - innodb_buffer_pool_size=2G  
+      - innodb_log_buffer_size=64M  
+      - max_allowed_packet=256M    
+      - bulk_insert_buffer_size=256M 
+      - net_buffer_length=16K      
