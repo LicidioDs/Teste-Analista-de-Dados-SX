@@ -129,9 +129,3 @@ o comportamento das notas 4 provas vs. estes dados.
 4. Power Point.
 5. Excel.
 6. Colab.
-
-
-
-
-
->>>>>>> e868f82404f88d4bec4613cb1d46c69f66b6a95f
