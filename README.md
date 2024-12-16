@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Projeto de Análise de Dados - ENEM 2020
 
 Este projeto tem como objetivo a análise dos dados do Exame Nacional do Ensino Médio (ENEM) 2020. Foram utilizadas ferramentas de Python e Power BI para processar e visualizar os dados. O foco principal foi o desenvolvimento de um processo de ETL para carregar os dados do arquivo CSV para um banco de dados MySQL e gerar indicadores e visualizações para análise do desempenho dos alunos.
